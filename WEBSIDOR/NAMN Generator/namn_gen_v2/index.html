@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>MyFontsWebfontsKit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!--
+/* @license
+ * MyFonts Webfont Build ID 2532905, 2013-04-17T09:29:26-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Grandma Bold by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/grandma/bold/
+ * Copyright: Copyright (c) 2008 by Hannes von Doehren. All rights reserved.
+ * 
+ * Webfont: Grandma Regular by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/grandma/regular/
+ * Copyright: Copyright (c) 2008 by Hannes von Doehren. All rights reserved.
+ * 
+ * Webfont: Number Five Smooth by Laura Worthington
+ * URL: http://www.myfonts.com/fonts/laura-worthington/number-five/smooth/
+ * Copyright: Copyright (c) 2012 by Laura Worthington. All rights reserved.
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2532905
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+-->
+
+<!-- 1. load the webfonts -->
+<link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+
+<!-- 2. set up some css styles using the webfonts -->
+<style type="text/css">
+.Grandma-Bold { font-family: Grandma-Bold; }
+.Grandma { font-family: Grandma; }
+.NumberFiveSmooth { font-family: NumberFiveSmooth; }
+</style>
+      <script src="js/gen.js"></script>
+
+
+<!-- not relevant to webfonts. just example code highlighting. -->
+<script type="text/javascript" src="Start here files/highlight.js"></script>
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<script type="text/javascript" src="http://html2canvas.hertzen.com/build/html2canvas.js"></script>
+
+<script type="text/javascript">
+
+
+html2canvas(document.body, {
+  onrendered: function(canvas) {
+    document.body.appendChild(canvas);
+  },
+  width: 300,
+  height: 300
+});
+
+</script>
+
+<!-- also not relavent to webfonts. just layout css for this doc. -->
+<link rel="stylesheet" type="text/css" href="Start here files/layout.css">
+
+
+</head>
+<body onload="Tjejfunktionen(); Pojkfunktionen(); PickRandomWord5();MM_preloadImages('haklapp_tjej.jpg','haklapp.jpg')">
+<div id="header">
+  <h2>Funktionalitetsexempel för namngeneratorn</h2> <br>
+</div>
+<div id="main_container">
+		
+<div id="headline">
+<h2 class="webfont-article-block"><img src="logo.jpg"  height="120" alt="Logo" /></h2>
+<div class="container-article">
+  <p style="font-size:36px;line-height:40px;">
+  <span class="Grandma-Bold" contenteditable="true">Namnförslag </span>
+  <span class="Grandma" contenteditable="true" style="font-size:24px;">- Testa lite förslag om du behöver inspiration </span><br />
+  
+</div>
+</div>
+<div id="webfont_instructions">
+	<FORM NAME="WordForm" >
+    <p>
+      <INPUT TYPE=BUTTON CLASS="btn btn-large btn-block btn-primary" onClick="Pojkfunktionen(document.WordForm);MM_swapImage('haklapp','','haklapp.jpg',1)" VALUE="Föreslå ett Pojknamn">
+      
+      
+      <INPUT TYPE=BUTTON CLASS="btn btn-large btn-block btn-danger" onClick="Tjejfunktionen(document.WordForm);MM_swapImage('haklapp','','haklapp_tjej.jpg',1)" VALUE="Föreslå ett Flicknamn">
+    </p>
+    <p>&nbsp;</p>
+    <hr>
+
+<div >
+  <p class="text-left Grandma"  style="font-size:28px;">Får vi lov att bjuda lilla
+  <INPUT TYPE=TEXT style=" color:#000;  background-color: transparent; font-size:28px; border:none; text-align:center; padding-top:0px; width:200px; " width="200" class="Grandma-Bold" NAME="WordBox2">
+    på en gratis haklapp med en fin namnbrodyr? - Vilket namn du nu väljer. </p>
+  <ul>
+<li>
+  <h4><strong>Få ett pojk- eller flicknamn genererat.</strong><i> (Begränsat antal namn inlagt i listan hittils)</i></h4>
+</li>
+
+    <li>
+      <h4><strong>Klicka i rutan på haklappen och skriva ett eget namn eller smeknamn.</strong></h4>
+    </li>
+  </ul>
+</div>
+
+<div class="container-article1" style="height:300px; z-index:4;">
+
+<p align="center";>
+ <img src="haklapp.jpg" alt="" name="haklapp" id="haklapp" width="360" height="300" /> </p>
+</div>
+
+<div class="container-article1" style="height:90px; z-index:5; top: -120px; position:relative;">
+<p align="center";>
+ <INPUT TYPE=TEXT style=" color:#F90;; font-weight:normal; background-color: transparent; font-size:34px; border:none; text-align:center; padding-top:0px; width:200px; " width="120" class="NumberFiveSmooth" NAME="WordBox"> </p>
+</div>
+
+<div class="container-article1" style="height:60px; z-index:5; top: -80px; position:relative;">
+<p align="center";>
+  <textarea name="WordBox1" class="text-left input-xxlarge" style="background-color:#fff; border:none; box-shadow:none; width:360px; height:60px; text-align:center;" ></textarea>
+	</form>
+
+
+</div>
+
+
+<div class="container-article1" style="height:60px; z-index:5; top: -80px; position:relative;">
+
+<p class="Grandma-Bold" style="font-size:24px;">HIPP HIPP HURRA!</p>
+
+<p><font style="font-family:'Ubuntu'; font-weight:bolder;">Gratulerar</font>
+
+<font style="font-family:'Ubuntu';"> - Vi på NameOnMini vill gärna fira Er familjs nytillskott med en haklapp fint broderad med ert barns namn. Vi bjuder på både haklappen, broderingen & frakt. Om ni väljer namnet så levererar vi. </font>
+</p>
+
+<p><font style="font-family:'Ubuntu'; font-weight:bolder;">Inte hunnit välja ännu?</font><font style="font-family:'Ubuntu';"> Oroa er inte, gå in och beställ haklappen som presentkort sålänge! </font></p>
+<p>&nbsp;</p>
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>

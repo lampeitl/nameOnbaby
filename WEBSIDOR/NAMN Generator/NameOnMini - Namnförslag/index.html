@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NameOnMini - NamnGen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+      <script src="js/gen.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  
+
+
+</head>
+
+  <body onload="PickRandomWord(); PickRandomWord1()">
+
+    <div class="container-narrow">
+
+      <div class="masthead" style="text-align: center;">
+            <img src="logo.jpg"></img>
+         <div class="text-left">   <p class="lead" >Endast påbörjat projekt</p></div>
+      <div class="progress progress-info progress-striped">
+  <div class="bar" style="width: 20%"></div>
+        <img src="logo.jpg" ></img>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+
+        <h1 >Namnförslag till din nykomling</h1>
+        <p class="lead" style="color:#bc72ad;">Använd NameOnMini's namnförslag för att testa lite olika namn till din baby. Oavsett vilket namn du väljer har vi en födelsepresentserbjudande åt familjens tillskott.</p>
+      
+      </div>
+
+<div class="jumbotron">
+<FORM NAME="WordForm" >
+    <INPUT TYPE=BUTTON CLASS="btn btn-large btn-block btn-primary" onClick="PickRandomWord3(document.WordForm); PickRandomWord4(document.WordForm)" VALUE="Föreslå ett Pojknamn">
+   
+
+    <INPUT TYPE=BUTTON CLASS="btn btn-large btn-block btn-danger" onClick="PickRandomWord(document.WordForm); PickRandomWord1(document.WordForm)" VALUE="Föreslå ett Flicknamn">
+    <hr>
+
+<div class="text-left"><font class="lead">Får vi lov att bjuda lilla <strong>
+<INPUT TYPE=TEXT class="text-center input-small" style=" color:#000; font-weight:normal;" NAME="WordBox"></strong> på en gratis haklapp med en fin namnbrodyr? - Vilket namn du nu väljer. <br><br>
+
+<font class="lead" style="color:#bc72ad;"><em>Namnet betyder</em></font><font class="lead"><br><textarea name="WordBox1" class="text-left input-xxlarge" style="background-color:#fff; border:none; box-shadow:none;" cols="12" rows="3" ></textarea>
+
+<br><br>Du betalar inget för varken haklapp eller frakt! <br><br>Fyll i & ta del av erbjudandet
+
+
+    </form>
+
+<form class="form-horizontal" method="post" action="http://www.lampeitl.se/cgi-bin/FormMail.pl">
+<input type="hidden" name="recipient" value="facebook@lampeitl.se">
+<input type="hidden" name="subject" value="Vi får automatiskt Namn, pojke/flicka och email">
+<input type="hidden" name="redirect" value="http://www.nameon.se/gavor/till-den-nyfodda/little-train-haklapp">
+
+
+  <div class="control-group">
+    <label class="control-label" for="inputNamn">Namn</label>
+    <div class="controls">
+<INPUT TYPE="TEXT" id="inputNamn" VALUE="" NAME="Namn" SIZE="20">   
+    </div>
+  </div>
+
+
+  <div class="control-group">
+    <label class="control-label" for="inputNamn">Email</label>
+    <div class="controls">
+	<INPUT TYPE="TEXT" id="inputNamn" VALUE="" NAME="Mail" SIZE="20">
+    </div>
+  </div>
+
+
+
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox">
+        <input type="checkbox"> Till en pojke
+      </label>
+      <label class="checkbox">
+        <input type="checkbox"> Till en flicka
+      </label>
+      <button TYPE="Submit" class="btn">Ta mig till Erbjudandet</button>
+    </div>
+  </div>
+
+
+</form>
+
+      <hr>
+
+      <div class="footer">
+</div>
+        <p>Namngeneratorsutkast av Andreas Lampeitl</p>
+      </div>
+
+  </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
